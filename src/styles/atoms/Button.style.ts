@@ -51,8 +51,6 @@ export const StyleButton = styled(StyleCursor)<{
 
   &:hover {
     background-color: ${(props: any) =>
-      (!props.disabled && !props.selected) || !props.selected
-        ? 'rgba(0, 0, 0, 0.03)'
-        : null};
+      props.disabled || props.selected ? null : 'rgba(0, 0, 0, 0.03)'};
   }
 `;
