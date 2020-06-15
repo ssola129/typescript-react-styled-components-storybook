@@ -7,10 +7,17 @@ import {
 
 addDecorator(
   withInfo({
-    styles: {
-
-    },
+    // styles: {
+    //   header: {
+    //     h1: {},
+    //     body: {},
+    //     h2: {}
+    //   },
+    //   infoBody: {}
+    // },
     inline: true,
     source: false,
+    propTables: false,
+    header: false,
   })
 );
