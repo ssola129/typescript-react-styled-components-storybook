@@ -2,9 +2,9 @@
 
 - Typescript
 - React
-- Storybook 
+- Storybook
 - Styled-components
-
+- React-icons
 
 # Install
 
@@ -36,13 +36,12 @@ $ npm typescript —init
 }
 ```
 
-
 ## Step 2
 
 ### 디렉터리 구조 셋팅 및 파일 생성
 
-1. 최상위 디렉터리 내부 
-    1. index.html 파일 생성
+1. 최상위 디렉터리 내부
+   1. index.html 파일 생성
 
 ```
 // index.html
@@ -50,7 +49,7 @@ $ npm typescript —init
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset=“UTF-8” /> 		<title>Hello</title>
+		<meta charset=“UTF-8” />		<title>Hello</title>
 	</head>
 	<body>
 		<div id=“app”></div>
@@ -58,3 +57,8 @@ $ npm typescript —init
 	</body>
 </html>
 ```
+
+## Step etc
+
+- https://react-icons.github.io/react-icons/
+- https://github.com/react-icons/react-icons
