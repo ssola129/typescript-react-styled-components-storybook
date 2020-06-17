@@ -1,15 +1,16 @@
 {
   "name": "storybook",
   "version": "1.0.0",
-  "description": "- Typescript - React - Storybook  - Styled-components",
+  "description": "Typescript/React/Storybook/Styled-components",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack",
+    "build": "npm run clean && webpack",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "npm run cleanStorybook && build-storybook",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
+    "cleanStorybook": "rm -rf storybook-static",
     "cleanCache": "rm -rf node_modules/.cache/hard-source/"
   },
   "keywords": [],
