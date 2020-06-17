@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleButton } from '../styles/atoms/Button.style';
+import { StyleButton } from '../../styles/Atoms/Button.style';
 
 interface ButtonProps {
   /** ReactNode */

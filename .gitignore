@@ -4,16 +4,17 @@
 
 /coverage
 
+/dist
 /build
 /storybook-static
-/dist
 
-/.DS_Store
+.DS_Store
 
 logs
 *.log
 *.sh
 
-/.idea
-
 yarn.lock
+package-lock.json
+
+/.idea
