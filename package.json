@@ -8,7 +8,9 @@
     "build": "webpack",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "cleanCache": "rm -rf node_modules/.cache/hard-source/"
   },
   "keywords": [],
   "author": "",
