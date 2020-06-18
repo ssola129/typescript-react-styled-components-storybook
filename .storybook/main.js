@@ -1,3 +1,8 @@
+const {
+  resolve
+} = require('path');
+const basePath = resolve(__dirname, '../');
+
 module.exports = {
   stories: ['../stories/**/*.stories.([tj]s|mdx)'],
   addons: [
@@ -10,8 +15,7 @@ module.exports = {
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
-      use: [
-        {
+      use: [{
           loader: require.resolve('ts-loader'),
         },
         {
@@ -20,6 +24,11 @@ module.exports = {
       ],
     });
     config.resolve.extensions.push('.ts', '.tsx');
+    config.resolve.modules.push(resolve(basePath, 'src'));
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      asset: resolve(basePath, 'assets'),
+    };
     return config;
   },
 };

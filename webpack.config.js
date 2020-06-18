@@ -2,6 +2,10 @@ const createStyledComponentsTransformer = require('typescript-plugin-styled-comp
   .default;
 const styledComponentsTransformer = createStyledComponentsTransformer();
 
+const {
+  resolve
+} = require('path');
+
 module.exports = {
   mode: 'development',
   entry: './src/index.tsx',
@@ -15,11 +19,11 @@ module.exports = {
     publicPath: '/dist',
   },
   resolve: {
+    modules: [resolve(__dirname, 'src'), resolve(__dirname, 'node_modules')],
     extensions: ['.ts', '.tsx', '.js'],
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.tsx?$/,
         loader: 'ts-loader',
         options: {
