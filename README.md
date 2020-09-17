@@ -4,7 +4,7 @@
 - React
 - Storybook
 - Styled-components
-- React-icons
+- @material-ui/icons
 
 # Install
 

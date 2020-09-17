@@ -1,10 +1,9 @@
-const createStyledComponentsTransformer = require('typescript-plugin-styled-components')
-  .default;
-const styledComponentsTransformer = createStyledComponentsTransformer();
-
 const {
   resolve
 } = require('path');
+const createStyledComponentsTransformer = require('typescript-plugin-styled-components')
+  .default;
+const styledComponentsTransformer = createStyledComponentsTransformer();
 
 module.exports = {
   mode: 'development',

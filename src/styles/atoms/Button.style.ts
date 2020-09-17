@@ -53,4 +53,10 @@ export const StyleButton = styled(StyleCursor)<{
     background-color: ${(props: any) =>
       props.disabled || props.selected ? null : 'rgba(0, 0, 0, 0.03)'};
   }
+
+  &.primary {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+  }
 `;

@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleButton } from 'styles/Atoms/Button.style';
 
 interface ButtonProps {
+  className?: string;
+  type: string | any;
   /** ReactNode */
   children: React.ReactNode;
   /** default/seleted/disabled  */
@@ -10,10 +12,18 @@ interface ButtonProps {
   onClick?: void;
 }
 
-function Button({ disabled, selected, onClick, children }: ButtonProps) {
+function Button({
+  className,
+  type,
+  disabled,
+  selected,
+  onClick,
+  children,
+}: ButtonProps) {
   return (
     <StyleButton
-      type={'button'}
+      className={className}
+      type={type}
       disabled={disabled}
       selected={selected}
       onClick={() => onClick}
@@ -24,6 +34,7 @@ function Button({ disabled, selected, onClick, children }: ButtonProps) {
 }
 
 Button.defaultProps = {
+  type: 'button',
   disabled: false,
   selected: false,
 };
